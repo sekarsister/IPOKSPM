@@ -1,253 +1,283 @@
-```markdown
-# 🧠 IPO MASTER SCORE
-## *Gabungan Fundamental × Social Sentiment & Bandarmology*
-
-> **“Fundamental memberi tahu APA yang harus dibeli.  
-> Sentimen memberi tahu KAPAN harus membeli.  
-> Bandarmology memberi tahu SIAPA yang sedang bermain.”**
-
-Sistem ini menggabungkan dua kerangka analisis menjadi **satu skor keputusan IPO**:
-
-- **IPO Fundamental Score** (60%) – Menilai seberapa yakin dana IPO akan meningkatkan laba.
-- **IPO Sentiment & Bandarmology Score** (40%) – Membaca psikologi pasar, jejak bandar, dan keselarasan opini di media sosial.
+# 🧠 **IPO MASTER SCORE**  
+### *Fundamental × Sentiment & Bandarmology*  
+> **Interactive Decision Framework** – klik setiap pilar untuk detailnya.
 
 ---
 
-# BAGIAN 1: IPO FUNDAMENTAL SCORE (60%)
-## *“Bukan sekadar cuan sesaat, tapi keyakinan dana tumbuh.”*
+## 📌 **STRUKTUR SKOR**
 
-### Enam Pilar Fundamental
+| Komponen | Bobot | Fokus |
+|----------|:----:|-------|
+| 🔵 **Fundamental Score** | **60%** | Seberapa yakin dana IPO akan jadi mesin laba? |
+| 🔴 **Sentiment & Bandarmology** | **40%** | Apakah pasar & bandar selaras mendukung? |
+| 🎯 **Master Score** | **100%** | Keputusan akhir: timing + kualitas |
 
-| Pilar | Nama | Bobot | Esensi |
-|-------|------|-------|--------|
-| **A** | Kualitas Penggunaan Dana IPO | 30% | Ke mana dana akan bekerja? |
-| **B** | Kesehatan Keuangan Historis | 20% | Fondasi sebelum IPO. |
-| **C** | Prospek Industri & Posisi Kompetitif | 20% | Apakah sektor tumbuh, punya *moat*? |
-| **D** | Valuasi Harga IPO | 15% | Harga wajar atau kemahalan? |
-| **E** | Kualitas Manajemen & Tata Kelola | 10% | Rekam jejak dan insentif. |
-| **F** | Risiko & Mitigasi | 5% | Ancaman dan kesiapan. |
+---
 
-### 🅰️ Pilar A: Kualitas Penggunaan Dana IPO (30%)
+# 🔵 BAGIAN 1: FUNDAMENTAL SCORE (60%)
 
-| Sub-Komponen | Skor Maks | Kriteria |
-|--------------|-----------|----------|
-| A1. Ekspansi Produktif | 40 | Capex, R&D, akuisisi sinergis. Porsi >50% → maksimal. |
-| A2. Modal Kerja | 30 | Untuk dorong penjualan, disertai proyeksi konkret. |
-| A3. Pelunasan Utang | 20 | Utang berbunga tinggi (>10%) → langsung naikkan laba. |
-| A4. Cadangan/Tidak Jelas | -10 | Dana nganggur = perencanaan buruk. |
-| A5. Target Kuantitatif | +10 | Ada target spesifik (waktu, kapasitas, nilai). |
+### 🏗️ Enam Pilar Fundamental – klik untuk membuka
 
-**Skor A = (A1+A2+A3+A4+A5)/100** (normalisasi 0–1)
+<details>
+<summary><strong>🅰️ Pilar A – Kualitas Penggunaan Dana IPO (30%)</strong></summary>
 
-### 🅱️ Pilar B: Kesehatan Keuangan Historis (20%)
+| Sub | Komponen | Skor Maks | Kriteria |
+|:---:|----------|:--------:|----------|
+| A1 | Ekspansi Produktif (capex, R&D, akuisisi) | 40 | Porsi >50% dari total dana IPO |
+| A2 | Modal Kerja untuk dorong penjualan | 30 | Disertai proyeksi pertumbuhan konkret |
+| A3 | Pelunasan Utang berbunga tinggi | 20 | Bunga >10% → langsung angkat laba |
+| A4 | Dana Cadangan / Tidak Jelas | -10 | Pengurang jika tanpa rencana |
+| A5 | Target Kuantitatif Spesifik | +10 | Bonus jika ada proyeksi waktu & kapasitas |
+
+> **Skor A** = (A1+A2+A3+A4+A5) / 100 → normalisasi 0–1
+
+</details>
+
+<details>
+<summary><strong>🅱️ Pilar B – Kesehatan Keuangan Historis (20%)</strong></summary>
 
 | Rasio | Skor Maks | Ambang Ideal |
-|-------|-----------|---------------|
-| B1. Pertumbuhan Pendapatan (CAGR 3 thn) | 25 | >15% → 25 |
-| B2. Margin Laba Bersih | 25 | >10% → 25 |
-| B3. ROE | 20 | >15% → 20 |
-| B4. DER | 15 | <0.5 → 15 |
-| B5. Arus Kas Operasi/Laba Bersih | 15 | >1 → 15 |
+|-------|:--------:|---------------|
+| B1. Pertumbuhan Pendapatan (CAGR 3th) | 25 | >15% |
+| B2. Margin Laba Bersih | 25 | >10% |
+| B3. ROE | 20 | >15% |
+| B4. DER | 15 | <0.5× |
+| B5. Arus Kas Operasi / Laba Bersih | 15 | >1.0× |
 
-**Skor B = Total/100**
+> **Skor B** = Total / 100
 
-### 🅲️ Pilar C: Prospek Industri & Posisi Kompetitif (20%)
+</details>
 
-| Sub-Komponen | Skor Maks | Kriteria |
-|--------------|-----------|----------|
-| C1. Pertumbuhan Industri (CAGR 5 thn) | 30 | >10% → 30 |
-| C2. Market Share & Peringkat | 25 | Top 3 → 25 |
-| C3. Barrier to Entry (Moat) | 25 | Paten, regulasi, brand, jaringan |
-| C4. Diversifikasi | 10 | Tidak bergantung >30% pada satu produk/pelanggan |
-| C5. Jumlah Kompetitor Besar | 10 | <5 → 10 |
+<details>
+<summary><strong>🅲️ Pilar C – Prospek Industri & Posisi Kompetitif (20%)</strong></summary>
 
-**Skor C = Total/100**
+| Sub | Komponen | Skor Maks | Kriteria |
+|:---:|----------|:--------:|----------|
+| C1 | Pertumbuhan Industri (CAGR 5th) | 30 | >10% → 30 |
+| C2 | Market Share & Peringkat | 25 | Top 3 → 25 |
+| C3 | Barrier to Entry (Moat) | 25 | Paten, regulasi, brand, jaringan |
+| C4 | Diversifikasi Produk/Pelanggan | 10 | Tidak bergantung >30% pada satu |
+| C5 | Jumlah Kompetitor Besar | 10 | <5 → 10 |
 
-### 🅳️ Pilar D: Valuasi Harga IPO (15%)
+> **Skor C** = Total / 100
+
+</details>
+
+<details>
+<summary><strong>🅳️ Pilar D – Valuasi Harga IPO (15%)</strong></summary>
 
 | P/E IPO vs Rata-rata Industri | Skor |
-|-------------------------------|------|
+|-------------------------------|:----:|
 | < 0.8× | 100 |
 | 0.8 – 1.0× | 80 |
 | 1.0 – 1.2× (wajar) | 60 |
 | 1.2 – 1.5× | 40 |
 | 1.5 – 2.0× | 20 |
-| > 2.0× atau rugi | 0 |
+| > 2.0× atau perusahaan rugi | 0 |
 
-**Skor D = skor/100** (normalisasi)
+> **Skor D** = skor / 100
 
-### 🅴️ Pilar E: Kualitas Manajemen & Tata Kelola (10%)
+</details>
 
-| Sub-Komponen | Skor Maks |
-|--------------|-----------|
-| E1. Pengalaman & Rekam Jejak | 30 |
-| E2. Kepemilikan Manajemen Pasca-IPO | 25 |
-| E3. Independensi Dewan Komisaris | 20 |
-| E4. Transparansi Prospektus | 25 |
+<details>
+<summary><strong>🅴️ Pilar E – Kualitas Manajemen & Tata Kelola (10%)</strong></summary>
 
-**Skor E = Total/100**
+| Sub | Komponen | Skor Maks |
+|:---:|----------|:--------:|
+| E1 | Pengalaman & Rekam Jejak | 30 |
+| E2 | Kepemilikan Manajemen Pasca-IPO (>30%) | 25 |
+| E3 | Independensi Dewan Komisaris (>50%) | 20 |
+| E4 | Transparansi Prospektus | 25 |
 
-### 🅵️ Pilar F: Risiko & Mitigasi (5%)
+> **Skor E** = Total / 100
 
-| Sub-Komponen | Skor Maks |
-|--------------|-----------|
-| F1. Identifikasi Risiko | 40 |
-| F2. Strategi Mitigasi Konkret | 40 |
-| F3. Ketergantungan Pihak Tertentu | 20 |
+</details>
 
-**Skor F = Total/100**
+<details>
+<summary><strong>🅵️ Pilar F – Risiko & Mitigasi (5%)</strong></summary>
 
-### Formula Fundamental
+| Sub | Komponen | Skor Maks |
+|:---:|----------|:--------:|
+| F1 | Identifikasi Risiko Lengkap | 40 |
+| F2 | Strategi Mitigasi Konkret | 40 |
+| F3 | Tanpa Ketergantungan >20% | 20 |
+
+> **Skor F** = Total / 100
+
+</details>
+
+### 🔢 **Formula Fundamental**
 
 $$
-\text{IPO\_Fundamental\_Score} = 0.30A + 0.20B + 0.20C + 0.15D + 0.10E + 0.05F
+\text{Fundamental Score} = 0.30A + 0.20B + 0.20C + 0.15D + 0.10E + 0.05F
 $$
 
 | Skor | Kategori |
-|------|----------|
-| > 75 | 🟢 High Conviction |
-| 60–75 | 🟡 Moderate |
-| 40–60 | 🟠 Wait & See |
-| < 40 | 🔴 Avoid |
+|:----:|----------|
+| **> 75** | 🟢 High Conviction |
+| **60–75** | 🟡 Moderate |
+| **40–60** | 🟠 Wait & See |
+| **< 40** | 🔴 Avoid |
 
 ---
 
-# BAGIAN 2: IPO SENTIMENT & BANDARMOLOGY SCORE (40%)
-## *“Baca ombak sebelum diterjang.”*
+# 🔴 BAGIAN 2: SENTIMENT & BANDARMOLOGY SCORE (40%)
 
-### Empat Pilar Sentimen
+<details>
+<summary><strong>🐺 Market Maker Influence (MMI) – 25%</strong></summary>
 
-| Pilar | Nama | Bobot | Esensi |
-|-------|------|-------|--------|
-| **MMI** | Market Maker Influence | 25% | Jejak bandar besar/kecil. |
-| **SC+SK+ALIGN** | Sentimen Konten, Komentar, Alignment | 15%+15%+10% | Keselarasan opini publik. |
-| **D** | Indeks Keraguan Forum | 15% | Sinyal ketidakpercayaan. |
-| **SA** | Sentimen Analis | 20% | Rekomendasi analis di platform. |
-
-### 🐺 Logika Bandarmology
-
-> “Bandar kecil atau besar memiliki pengaruh ombak yang keras.”  
-> Konten menyarankan netral/buy, komentar selaras? Forum ragu? Analis bagaimana?  
-> *Bandarmology* membaca akumulasi, mark-up, distribusi, mark-down lewat sinyal digital.
-
-### 1. Market Maker Influence (MMI) — 25%
+**Rumus:**
 
 $$
-MMI = \frac{ \sum_{i} \left( w_{\text{size},i} \times w_{\text{eng},i} \times S_i \right) }{ \sum_{i} \left( w_{\text{size},i} \times w_{\text{eng},i} \right) }
+MMI = \frac{ \sum ( w_{\text{size}} \times w_{\text{eng}} \times S ) }{ \sum ( w_{\text{size}} \times w_{\text{eng}} ) }
 $$
 
-- **Big Shark**: >100k followers.  
-- **Small Shark**: 1k–100k, engagement tinggi.  
-- **Piranha**: <1k, viral.  
-- **S_i**: +1 buy, 0 netral, -1 sell.  
-- **w_size**: log10(followers+1).  
-- **w_eng**: (like+retweet+komentar)/followers (cap 1).
+- **S** = sentimen (+1 buy, 0 netral, -1 sell)  
+- **w_size** = log10(followers+1)  
+- **w_eng** = (like+retweet+komentar)/followers (cap 1)
 
-### 2. Sentimen Konten (SC) & Komentar (SK) — 15%+15%
+| Tipe Akun | Follower | Bobot |
+|-----------|----------|:-----:|
+| 🦈 Big Shark | >100k | tinggi |
+| 🐟 Small Shark | 1k–100k | sedang |
+| 🐠 Piranha | <1k (viral) | rendah |
+
+> **Bandarmology insight:** MMI >0.8 dari sedikit akun besar → *gorengan*. MMI tinggi dengan banyak akun kecil → akumulasi organik.
+
+</details>
+
+<details>
+<summary><strong>📣 Sentimen Konten (SC), Komentar (SK), Alignment (ALIGN)</strong></summary>
+
+| Indeks | Rumus | Bobot |
+|--------|-------|:----:|
+| **SC** | (N_buy – N_sell) / N_total | 15% |
+| **SK** | (N_buy – N_sell) / N_total | 15% |
+| **ALIGN** | Proporsi komentar selaras konten (1=setuju, 0.5=netral, 0=bertolak) | 10% |
+
+> **Divergensi:** SC tinggi + SK rendah + ALIGN < 0.5 → *barang disebar, ombak buatan.*
+
+</details>
+
+<details>
+<summary><strong>🌫️ Indeks Keraguan Forum (D) – 15%</strong></summary>
 
 $$
-SC = \frac{ N_{\text{buy}} - N_{\text{sell}} }{ N_{\text{total}} } \quad ; \quad SK = \text{sama untuk komentar}
+D = \frac{\text{Jumlah komentar ragu}}{\text{Total komentar IPO}}
 $$
 
-**Alignment (ALIGN)** — 10%:  
-Proporsi komentar yang selaras dengan konten. 1 = setuju, 0.5 = salah satu netral, 0 = bertolak belakang.
+Kata kunci: *“ragu”, “wait and see”, “jebakan”, “bandar nyebar”, “belum yakin”*
 
-### 3. Indeks Keraguan Forum (D) — 15%
+**Keyakinan Pasar = 1 – D**
 
-$$
-D = \frac{ \text{Jumlah komentar ragu} }{ \text{Total komentar IPO} }
-$$
+</details>
 
-- Kata kunci: “ragu”, “wait and see”, “jebakan”, “bandar nyebar”, “belum yakin”.  
-- (1-D) = Keyakinan Pasar.
-
-### 4. Sentimen Analis (SA) — 20%
+<details>
+<summary><strong>🎓 Sentimen Analis (SA) – 20%</strong></summary>
 
 | Rekomendasi | Skor |
-|-------------|------|
+|-------------|:----:|
 | Buy tegas | +1 |
-| Buy dgn catatan | +0.5 |
+| Buy dengan catatan | +0.5 |
 | Hold | 0 |
 | Sell | -1 |
 
-**SA** = rata-rata skor semua analis.
+> **SA** = rata-rata skor semua analis di Stockbit/vlbury.
 
-### Formula Sentimen
+</details>
 
-$$
-\text{IPO\_Sentiment\_Score} = 0.25\cdot MMI + 0.15\cdot SC + 0.15\cdot SK + 0.10\cdot ALIGN + 0.15\cdot(1-D) + 0.20\cdot SA
-$$
-
-Nilai berkisar -1 hingga +1, namun dapat dinormalisasi ke 0–1 dengan rumus:
+### 🔢 **Formula Sentimen (mentah → normalisasi)**
 
 $$
-\text{IPO\_Sentiment\_Score}_{\text{normalized}} = \frac{ \text{IPO\_Sentiment\_Score} + 1 }{ 2 }
+Sentiment_{raw} = 0.25\cdot MMI + 0.15\cdot SC + 0.15\cdot SK + 0.10\cdot ALIGN + 0.15\cdot(1-D) + 0.20\cdot SA
 $$
 
-sehingga mudah digabung.
+$$
+Sentiment_{norm} = (Sentiment_{raw} + 1) / 2
+$$
 
-| Skor Normalized | Kategori |
-|-----------------|----------|
-| > 0.75 | 🟢 Bullish kuat |
-| 0.50–0.75 | 🟡 Bullish moderat |
-| 0.25–0.50 | 🟠 Mixed / wait & see |
-| < 0.25 | 🔴 Bearish / hindari |
+| Skor Norm | Kategori |
+|:---------:|----------|
+| **> 0.75** | 🟢 Bullish Kuat |
+| **0.50–0.75** | 🟡 Bullish Moderat |
+| **0.25–0.50** | 🟠 Mixed |
+| **< 0.25** | 🔴 Bearish |
 
 ---
 
-# ⚖️ GABUNGAN AKHIR: IPO MASTER SCORE
+# ⚖️ **GABUNGAN: IPO MASTER SCORE**
 
-## Formula Kombinasi
-
-$$
-\text{IPO\_Master\_Score} = 0.60 \times \text{IPO\_Fundamental\_Score} + 0.40 \times \text{IPO\_Sentiment\_Score}_{\text{normalized}}
-$$
-
-Bobot dapat disesuaikan berdasarkan preferensi investor:  
-- **Value investor**: 0.80 fundamental, 0.20 sentimen.  
-- **Trader momentum**: 0.40 fundamental, 0.60 sentimen.
-
-## Matriks Keputusan Akhir
-
-| Master Score | Kategori | Tindakan |
-|--------------|----------|-----------|
-| **> 80** | 🟢 **Strong Buy** | Fundamental bagus + sentimen mendukung. Konfirmasi ganda. Ideal untuk investasi. |
-| **65 – 80** | 🟡 **Buy with Caution** | Prospek baik, sentimen cukup. Bisa akumulasi bertahap. |
-| **45 – 65** | 🟠 **Hold / Wait** | Campuran sinyal. Tunggu kejelasan fundamental pasca-IPO atau perubahan sentimen. |
-| **< 45** | 🔴 **Avoid** | Fundamental lemah dan/atau sentimen buruk. Hindari. |
-
-## Contoh Integrasi: PT. Teknologi Maju Bersama Tbk. (Fiktif)
-
-- **Fundamental Score** = 0.940 (94.0) 🟢
-- **Sentiment Score** (mentah) = 0.635 (normalisasi: (0.635+1)/2 = 0.8175) 🟢
+### **Formula Akhir**
 
 $$
-\text{Master Score} = 0.60(0.940) + 0.40(0.8175) = 0.564 + 0.327 = \mathbf{0.891 \ (89.1)}
+\text{Master Score} = 0.60 \times \text{Fundamental} + 0.40 \times \text{Sentiment}_{norm}
 $$
 
-**Keputusan: 🟢 Strong Buy** — Fundamental kuat, sentimen pasar mendukung. Keyakinan tinggi bahwa dana IPO akan mendorong profit dan pasar merespons positif.
+| Master Score | Sinyal | Aksi |
+|:------------:|--------|------|
+| **> 80** | 🟢 **STRONG BUY** | Konfirmasi fundamental + sentimen. Entry aman. |
+| **65 – 80** | 🟡 **BUY WITH CAUTION** | Prospek bagus, akumulasi bertahap. |
+| **45 – 65** | 🟠 **HOLD / WAIT** | Tunggu kejelasan pasca-IPO. |
+| **< 45** | 🔴 **AVOID** | Jangan masuk. |
 
 ---
 
-# 🛠️ TOOLS & IMPLEMENTASI
+## 🧪 **CONTOH PERHITUNGAN INTERAKTIF**  
+*PT. Teknologi Maju Bersama Tbk. (Fiktif)*
 
-- **Scraping:** snscrape, Selenium, BeautifulSoup, telethon, praw.  
-- **NLP:** IndoBERT (fine-tuned), Sastrawi, VADER (modifikasi).  
-- **Analisis Fundamental:** Manual dari prospektus + otomatisasi rasio.  
-- **Backend:** Python (pandas, scikit-learn).  
-- **Dashboard:** Streamlit / Grafana.
+<details>
+<summary><strong>🔵 Fundamental Score – klik untuk lihat detail</strong></summary>
+
+| Pilar | Skor Mentah | Normalisasi |
+|-------|:----------:|:-----------:|
+| A | 90/100 | 0.90 |
+| B | 100/100 | 1.00 |
+| C | 100/100 | 1.00 |
+| D | 80/100 | 0.80 |
+| E | 100/100 | 1.00 |
+| F | 100/100 | 1.00 |
+
+**Fundamental Score** = 0.30×0.90 + 0.20×1.00 + 0.20×1.00 + 0.15×0.80 + 0.10×1.00 + 0.05×1.00 = **0.940 (94.0)** 🟢
+
+</details>
+
+<details>
+<summary><strong>🔴 Sentiment Score – klik untuk lihat detail</strong></summary>
+
+| Indikator | Nilai |
+|-----------|:-----:|
+| MMI | 0.87 |
+| SC | 0.50 |
+| SK | 0.05 |
+| ALIGN | 0.70 |
+| 1-D (Keyakinan) | 0.70 |
+| SA | 0.80 |
+
+**Sentiment Raw** = 0.25×0.87 + 0.15×0.50 + 0.15×0.05 + 0.10×0.70 + 0.15×0.70 + 0.20×0.80 = **0.635**  
+**Sentiment Norm** = (0.635+1)/2 = **0.8175** 🟢
+
+</details>
+
+### 🎯 **Master Score**
+
+$$
+0.60 \times 0.940 + 0.40 \times 0.8175 = \mathbf{0.891 \ (89.1)} \quad \text{🟢 STRONG BUY}
+$$
+
+> **Kesimpulan:** Fundamental kokoh, bandar & sentimen mendukung. Dana IPO diyakini akan mengangkat laba, dan pasar merespons positif.
 
 ---
 
-# 📌 CATATAN PENTING
+## 🛠️ **TEKNIKAL IMPLEMENTASI**
 
-1. **Backtest Bobot**: Lakukan regresi logistik dengan data IPO 2–3 tahun terakhir untuk mengoptimalkan bobot, baik di skor fundamental, sentimen, maupun bobot kombinasi 60:40.  
-2. **Dinamis**: Pasar berubah; lakukan *re-calibration* berkala.  
-3. **Etika Scraping**: Patuhi robots.txt, jangan spam request.  
-4. **Bahasa**: Model NLP harus terus di-update dengan slang pasar modal terkini (“gorengan”, “cuan”, “nyangkut”, “lambo”).
+| Tugas | Tools |
+|-------|-------|
+| Scraping | snscrape, Selenium, BeautifulSoup, telethon, praw |
+| NLP | IndoBERT (fine-tuned), Sastrawi |
+| Fundamental | Prospektus parsing, analisis manual/otomatis |
+| Backend | Python (pandas, scikit-learn) |
+| Dashboard | Streamlit / Grafana |
 
 ---
 
-*“Investasi IPO terbaik terjadi ketika fundamental yang kuat bertemu dengan sentimen pasar yang tepat.  
-Dengan Master Score ini, Anda tidak hanya berlayar mengikuti ombak, tetapi tahu ke mana ombak itu akan membawa Anda.”*
-```
+*“What gets measured, gets managed. Now you measure both fundamentals and market psychology before every IPO.”*  
