@@ -1,4 +1,4 @@
-```markdown
+markdown
 # 🔴 IPO SENTIMENT & BANDARMOLOGY SCORE – COMPLETE WORKSHEET  
 ### *“Baca Ombak Sebelum Diterjang”*  
 
@@ -88,13 +88,24 @@ Skor akhir (setelah normalisasi) berkisar **0–100**.
 3. **Tokenisasi:** Pecah kalimat menjadi kata.  
 4. **Stopword removal:** Pakai `Sastrawi` (bahasa Indonesia).  
 5. **Slang normalizer:** Tambahkan kamus manual untuk istilah pasar modal:  
-   - *cuan* → untung  
-   - *nyangkut* → rugi / tertahan  
-   - *lambo* → keuntungan besar  
-   - *gorengan* → saham yang dimanipulasi  
-   - *bandar* → pemain besar  
-   - *auto lotre* → pasti untung  
-   - *FOMO* → fear of missing out  
+
+| Slang | Arti |
+|-------|------|
+| *cuan* | untung |
+| *nyangkut* | rugi / tertahan |
+| *lambo* | keuntungan besar |
+| *gorengan* | saham yang dimanipulasi |
+| *bandar* | pemain besar |
+| *auto lotre* | pasti untung |
+| *FOMO* | fear of missing out |
+| *TP* | target price / take profit |
+| *CL* | cut loss |
+| *cuannn* | sangat untung |
+| *nyangkut parah* | rugi besar |
+| *mantul* | memantul / naik kembali |
+| *jeblok* | turun tajam |
+| *goreng* | manipulasi harga |
+| *pom-pom* | promosi berlebihan |
 
 ---
 
@@ -110,9 +121,14 @@ Skor akhir (setelah normalisasi) berkisar **0–100**.
 
 Jika model tidak tersedia, gunakan daftar kata:  
 
-- **Buy:** *beli, masuk, potensi cuan, target harga, rekomendasi beli, auto lotre, pasti naik, IPO murah*  
-- **Sell:** *jual, hindari, nyangkut, turun, rugi, overvalued, mahal, hati-hati*  
-- **Netral:** kata selain itu, atau skor sentimen mendekati nol.
+**Daftar Kata Buy (+1):**
+*beli, masuk, potensi cuan, target harga, rekomendasi beli, auto lotre, pasti naik, IPO murah, mantap, gas, sikat, borong, akumulasi, entry, bagus, prospek bagus, fundamental kuat, murah, diskon, potensi naik, cuan besar, wajib beli, jangan sampe ketinggalan, FOMO, buruan, kesempatan, langka, emas, permata*
+
+**Daftar Kata Sell (–1):**
+*jual, hindari, nyangkut, turun, rugi, overvalued, mahal, hati-hati, jebakan, gorengan, bandar nyebar, tinggalkan, cut loss, CL, exit, keluar, bahaya, waspada, jangan beli, mending lewat, gak worth it, terlalu mahal, gak masuk akal, valuasi gila, bubble, ponzi*
+
+**Netral (0):**
+Kata selain di atas, atau skor sentimen mendekati nol.
 
 ---
 
@@ -134,8 +150,7 @@ Untuk platform tanpa follower (mis. Telegram), gunakan **jumlah views/reaksi** s
 
 ```
 
-MMI = ───────────────────────────
-Σ ( w_size × w_eng )
+MMI = Σ ( w_size × w_eng × S ) / Σ ( w_size × w_eng )
 
 ```
 
@@ -158,7 +173,7 @@ MMI = ────────────────────────�
 | 2  | TikTok   | @cuanID  | 500.000   | 120.000               | 5,70   | 0,24  | +1| 1,368          |
 | 3  | Stockbit | analisX  | 12.500    | 2.500                 | 4,10   | 0,20  | 0 | 0              |
 | 4  | Telegram | PumpGrup | (views 50k)| 50.000              | 4,70*  | 1,0   | -1| –4,70          |
-| ...|          |          |           |                       |        |       |   |                |
+| 5  |          |          |           |                       |        |       |   |                |
 | **Total** | | | | | Σ w_size×w_eng = ___ | | | Σ atas = ___ |
 
 *Untuk Telegram tanpa follower, gunakan log₁₀(views+1) sebagai w_size, w_eng = reaksi/views.
@@ -214,6 +229,8 @@ Kemudian rata‑ratakan semua skor postingan.
 
 ### 🧾 Worksheet SC, SK, ALIGN  
 
+**Tabel Konten**
+
 | Platform | Postingan Buy | Postingan Netral | Postingan Sell | Total Postingan |
 |----------|---------------|------------------|----------------|-----------------|
 | X        | ___           | ___              | ___            | ___             |
@@ -223,6 +240,8 @@ Kemudian rata‑ratakan semua skor postingan.
 | **Total**| **___**       | **___**           | **___**         | **___**          |
 
 **SC = (Total Buy – Total Sell) / Total Postingan = ___**
+
+**Tabel Komentar**
 
 | Platform | Komentar Buy | Komentar Netral | Komentar Sell | Total Komentar |
 |----------|---------------|-----------------|---------------|----------------|
@@ -247,7 +266,7 @@ Kemudian rata‑ratakan semua skor postingan.
 
 ### Kata Kunci Keraguan (dapat disesuaikan)  
 
-*“ragu”, “wait and see”, “jebakan”, “bandar nyebar”, “hati‑hati”, “belum yakin”, “takut nyangkut”, “kemahalan”, “overvalued”, “jangan dulu”, “mending lewat”, “gak dulu”, “tunggu dulu”*
+*“ragu”, “wait and see”, “jebakan”, “bandar nyebar”, “hati‑hati”, “belum yakin”, “takut nyangkut”, “kemahalan”, “overvalued”, “jangan dulu”, “mending lewat”, “gak dulu”, “tunggu dulu”, “masih mikir”, “belum berani”, “trauma”, “pernah kena”, “gak percaya”, “too good to be true”, “aneh”, “curiga”, “jangan-jangan”*
 
 ### Rumus  
 
@@ -305,7 +324,8 @@ D = Jumlah komentar/pesan mengandung keraguan / Total komentar/pesan terkait IPO
 | 1. @analisA (Stockbit) | Buy, TP 500 | +1 |
 | 2. @investorB (vlbury) | Hold dulu | 0 |
 | 3. Sekuritas XYZ | Buy dengan catatan | +0,5 |
-| ... | | |
+| 4. | | |
+| 5. | | |
 | **Rata‑rata** | | **SA = ___** |
 
 > **Catatan:** Jika mayoritas analis seragam *buy* tanpa dasar fundamental kuat, waspadai *pom‑pom* bandar. Analis independen biasanya lebih seimbang.
@@ -406,6 +426,8 @@ Sentiment_Norm = (0,635 + 1) / 2 × 100 = 81,75  🟢 Bullish Kuat
 2. **Etika Scraping:** Patuhi `robots.txt`, jangan DDoS, gunakan rate limiting.  
 3. **Validasi Manual:** Sentimen dari TikTok sering butuh verifikasi manual karena banyak ironi/sarkasme.  
 4. **Bobot Dinamis:** Lakukan backtest dengan regresi logistik menggunakan data IPO historis untuk mengkalibrasi ulang bobot MMI, SC, SK, dll.  
+5. **Konteks:** Perhatikan konteks diskusi. Kata “gila” bisa berarti “sangat bagus” atau “sangat buruk” tergantung kalimat.  
+6. **Volume:** Selain sentimen, perhatikan juga volume postingan/komentar. Lonjakan volume mendadak sering menandakan koordinasi.  
 
 ---
 
